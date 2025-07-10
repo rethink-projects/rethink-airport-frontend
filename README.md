@@ -12,6 +12,8 @@ O candidato deverá remover os dados mockados e integrar o frontend a uma API St
 - Manter a estilização e componentes existentes.
 - Substituir o mock dos componentes PromotionSection, Footer e CarReservation por requisições reais ao Strapi.
 
+![Git1 Logo](public/assets/git1.png)
+
 ## Rodando o Front-End
 
 - Faça um fork deste repositório.
