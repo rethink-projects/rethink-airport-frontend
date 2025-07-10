@@ -52,8 +52,6 @@ export default function FlightStatus() {
         <Tab label="Chegadas" value="Chegada" />
       </Tabs>
 
-      {/* Título com data */}
-
       {/* Tabela de voos filtrados */}
       <Box sx={{ overflowX: "auto" }}>
         <Table>
