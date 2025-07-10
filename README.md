@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Rethink Airport Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Parabéns! Se você recebeu este teste confiamos no potencial do seu trabalho e estamos ansiosos para ver como você se sai tecnicamente neste desafio.
 
-## Available Scripts
+Este projeto é um **teste técnico** para desenvolvedores com experiência em Strapi.
+O candidato deverá remover os dados mockados e integrar o frontend a uma API Strapi real.
 
-In the project directory, you can run:
+## Objetivos do Teste
 
-### `npm start`
+- Consumir endpoints do Strapi para obter os dados do site.
+- Garantir que a seleção de abas (Partidas/Chegadas) continue funcionando corretamente.
+- Manter a estilização e componentes existentes.
+- Substituir o mock dos componentes PromotionSection, Footer e CarReservation por requisições reais ao Strapi.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Rodando o Front-End
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Faça um fork deste repositório.
+- Instale as dependências com npm i
+- Rode o projeto com npm start
+- Observe a homepage com atenção
 
-### `npm test`
+## Instruções
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Configurar Strapi**: Crie um projeto Strapi (em repositório apartado), configure-o na porta padrão e crie os single-types e collection-types necessários para cobrir:
 
-### `npm run build`
+- Os dados globais do site como título, footer, descrição;
+- O slider da homepage (ImageSlider) recebendo no mínimo 2 e no máximo 6 imagens;
+- Os dados de voos, substituindo o serviço flightService.js pela requisição real;
+- Os cards de promoção (PromotionSection) recebendo no máximo 4 cards;
+- O componente CarReservationBanner deve ser um componente strapi, ou seja, eu devo conseguir incluí-lo ou retirá-lo da homepage colocando o bloco "CarReservationBanner" vinculado a homepage;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Substitua os mocks pelo serviço real**;
+3. **Deixe um .env-example com as configurações para apontamento da API**;
+4. **Envie os dois repositórios: strapi + fork do frontend devidamente documentado;**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. ⭐⭐**PLUS** ⭐⭐- O que você pode entregar além do solicitado acima que vai nos impressionar de verdade:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 1: Fazer o componente QuickSearch funcionar refletindo no componente FlightStatus;
 
-### `npm run eject`
+- 2: Há uma rota de login, para este plus você deverá cadastrar uma rota protegida que somente será acessível por usuários da role Authenticated, tanto na API quanto no FrontEnd. Na página restrita, coloque o nome do usuário logado e o email dele para validar a informação;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 3: Dockerize o strapi;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Sucesso no teste!
