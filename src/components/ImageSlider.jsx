@@ -24,7 +24,13 @@ export default function ImageSlider({ images }) {
             component="img"
             src={src}
             alt={`slide-${i}`}
-            sx={{ width: "100%", height: 300, objectFit: "cover" }}
+            sx={{
+              width: "100%",
+              height: 300,
+              objectFit: "cover",
+              borderRadius: 3,
+              margin: "10px 0",
+            }}
           />
         ))}
       </Slider>

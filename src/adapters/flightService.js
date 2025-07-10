@@ -6,18 +6,18 @@ export async function getAllFlights() {
     {
       id: 1,
       code: 'RA123',
-      type: 'Departure',
+      type: 'Chegada',
       departedAt: '08:30',
       arrivesAt: '10:45',
-      status: 'On Time',
+      status: 'No horário',
     },
     {
       id: 2,
       code: 'RA456',
-      type: 'Arrival',
+      type: 'Partida',
       departedAt: '07:15',
       arrivesAt: '09:00',
-      status: 'Delayed',
+      status: 'Atrasado',
     },
 
   ];
